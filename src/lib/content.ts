@@ -1,6 +1,6 @@
 export const profile = {
   name: "Thomas Ayih-Akakpo",
-  role: "Enterprise Systems Architect",
+  role: "Software Engineer",
   subroles: [
     "Integration & Data Engineering Lead",
     "Custom API & ERP Solutions",
@@ -91,7 +91,7 @@ export const experience: ExperienceEntry[] = [
     company: "Blueline Entreprise",
     period: "2017 – 2018",
     description:
-      "Owned architecture through deployment — testing, continuous integration, code reviews — to give the development team the environment to ship production-ready, enterprise-class applications.",
+      "Owned architecture through deployment (testing, continuous integration, code reviews) to give the development team the environment to ship production-ready, enterprise-class applications.",
   },
   {
     role: "Research & Development Engineer",

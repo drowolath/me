@@ -18,7 +18,7 @@ export default function Contact() {
         </p>
         <p className="mt-3 max-w-md leading-relaxed text-muted">
           A creaking integration, a data architecture that needs stabilizing,
-          or a role where it matters — let&apos;s talk.
+          or a role where it matters ? Let&apos;s talk.
         </p>
         <div className="mt-8 flex flex-col gap-3">
           {links.map((link) => (
