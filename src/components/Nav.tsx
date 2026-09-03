@@ -1,7 +1,6 @@
 const links = [
   { label: "About", href: "#about" },
-  { label: "Approach", href: "#approach" },
-  { label: "Projects", href: "#projects" },
+  { label: "Work", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
@@ -24,6 +23,15 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="/thomas-ayih-akakpo-resume.pdf"
+              download
+              className="font-mono text-xs text-accent underline decoration-rule underline-offset-4 hover:decoration-accent"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

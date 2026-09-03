@@ -7,7 +7,7 @@ export default function Stack() {
         <h2 className="font-mono text-xs tracking-widest text-muted uppercase">
           Stack
         </h2>
-        <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:gap-12">
+        <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
           {stack.map((group) => (
             <div key={group.group}>
               <h3 className="font-mono text-xs text-accent">{group.group}</h3>

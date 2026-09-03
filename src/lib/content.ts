@@ -1,25 +1,78 @@
 export const profile = {
   name: "Thomas Ayih-Akakpo",
-  role: "Software Engineer",
+  role: "Data & Backend Architect",
   subroles: [
-    "Integration & Data Engineering Lead",
+    "Data Pipelines, Distributed Systems & Integrations",
     "Custom API & ERP Solutions",
   ],
   summary:
     "Most data problems at fast-growing companies are actually integration problems. Webhooks silently drop, ERPs drift from storefronts, and pipelines choke under volume. I find where these systems are structurally weak, and rebuild them to scale.",
   detail:
-    "With 16+ years designing distributed systems, I thrive on creating a single source of truth across a company's multiple domains and stabilizing architectures under real production load.",
+    "With 16+ years designing distributed systems, I specialize in complex data ingestion, integration middleware, and data modelling that turns raw data into actionable performance indicators for operational leadership.",
   openTo: [
     "Data Engineer",
     "Lead Software Engineer",
     "Engineering Manager",
   ],
+  location: "Antananarivo, Madagascar (UTC+3)",
 };
 
+export const achievements = [
+  {
+    title: "IT leadership for a multi-activity group",
+    body: "Technical lead for a team of 7, running cross-functional IT across caviar production and textile divisions.",
+  },
+  {
+    title: "€500K+ in e-commerce revenue",
+    body: "Generated over 4 years through 2 custom B2C stores, designed and delivered end to end.",
+  },
+  {
+    title: "Vector search engine, v1.0",
+    body: "FAISS/pgvector visual discovery tool for a company's embroidery library, cutting the time between client request and custom-design proposal.",
+  },
+  {
+    title: "Full production-cycle software for a fish farm",
+    body: "Feeding, hatchery, rearing ponds, environmental monitoring, and caviar processing — rebuilt from the ground up.",
+  },
+  {
+    title: "50% shorter delivery lead time",
+    body: "Redesigned the engineering workflow — branching strategy, CI, code review, onboarding.",
+  },
+];
+
 export const stack = [
-  { group: "Languages & Frameworks", items: ["Python (FastAPI, DRF)", "TypeScript (NestJS)"] },
-  { group: "Data", items: ["PostgreSQL", "Redis"] },
-  { group: "Platform", items: ["Docker"] },
+  {
+    group: "Backend & Data",
+    items: [
+      "Python (Django, DRF, FastAPI, Flask)",
+      "TypeScript (NestJS)",
+      "Celery, RabbitMQ, Redis",
+      "PostgreSQL",
+      "Vector search (FAISS, pgvector)",
+    ],
+  },
+  {
+    group: "Platform & Operations",
+    items: [
+      "Docker, Docker Swarm, Traefik",
+      "Cloudflare Tunnel",
+      "Linux, AWS, on-premise & hybrid infra",
+      "GitHub Actions (CI/CD)",
+      "Keycloak, Azure API Management",
+    ],
+  },
+  {
+    group: "Architecture & Methods",
+    items: [
+      "Event-driven & API-first design",
+      "Modular / targeted microservices",
+      "End-to-end idempotence",
+    ],
+  },
+  {
+    group: "Testing & Quality",
+    items: ["Playwright", "Vitest", "pytest"],
+  },
 ];
 
 export const method = [
@@ -52,7 +105,7 @@ export const projects: Project[] = [
     name: "Paybriq",
     href: "https://paybriq.com/",
     description:
-      "A Django-based payment processing API that sits as middleware in front of multiple mobile money payment providers , soon bank cards, and digital wallets. Handles customer management, API keys, real-time payment status via webhooks, and public payment status pages, with full audit logging across every transaction.",
+      "A Django-based payment processing API that sits as middleware in front of multiple mobile money payment providers, soon bank cards and digital wallets. Handles customer management, API keys, real-time payment status via webhooks, and public payment status pages, with full audit logging across every transaction.",
     tags: ["Python", "Django", "Payments", "Webhooks"],
   },
   {
@@ -76,38 +129,88 @@ type ExperienceEntry = {
   company: string;
   period: string;
   description: string;
+  highlights?: string[];
+  stack?: string[];
 };
 
 export const experience: ExperienceEntry[] = [
   {
-    role: "Head of IT",
-    company: "Acipenser Madagascar",
-    period: "2018 – 2026",
+    role: "Head of IT — Distribution & IT Leadership",
+    company: "Acipenser Madagascar (Acipenser / Akanjo group)",
+    period: "Nov 2021 – Jun 2026",
     description:
-      "Owned data and systems end to end: simplified KPI tracking for data-driven decisions, built e-commerce platforms for luxury goods, designed internal tools to improve forecasting and productivity, and implemented an ERP to streamline logistics and distribution.",
+      "Took over the group's IT leadership across caviar distribution and textile development, growing the team from 3 to 7 and building the integration backbone tying Odoo, Saleor and third-party APIs together.",
+    highlights: [
+      "Odoo integration for distribution: order and stock management between Acipenser and its distributors (Paris, Luxembourg, New York); structured the product catalogue and achieved French e-invoicing compliance (Peppol).",
+      "Event-driven integration middleware consuming webhooks across Odoo, Saleor and third-party carrier APIs — the single source of truth for group-wide data.",
+      "Designed and delivered 2 B2C e-commerce stores, generating €500K+ in revenue over 4 years, with KPI reporting to steer the business.",
+      "Delivered a vector search engine (FAISS/pgvector) for the brand's embroidery library, at the direct request of group leadership.",
+      "Self-hosted Debian / Docker Swarm infrastructure; led the Microsoft 365 overhaul (multi-domain governance, licensing, tenant migration).",
+    ],
+    stack: [
+      "Python",
+      "Django",
+      "FastAPI",
+      "Odoo",
+      "Saleor",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "FAISS",
+      "pgvector",
+      "Docker",
+      "Traefik",
+      "GitHub Actions",
+    ],
   },
   {
-    role: "Lead Software Engineer",
-    company: "Blueline Entreprise",
-    period: "2017 – 2018",
+    role: "Head of IT — Fish Farm & Production",
+    company: "Acipenser Madagascar (Acipenser / Akanjo group)",
+    period: "Nov 2018 – Nov 2021",
     description:
-      "Owned architecture through deployment (testing, continuous integration, code reviews) to give the development team the environment to ship production-ready, enterprise-class applications.",
+      "On-site technical lead rebuilding the fish farm's management software end to end, driving the technical roadmap directly.",
+    highlights: [
+      "Rebuilt the farm management software: feed production and distribution to sturgeons, hatchery efficiency from fertilised egg intake to hatching, population tracking across rearing ponds, environmental monitoring, and processing tracking (slaughter, curing, caviar tinning).",
+    ],
   },
   {
-    role: "Research & Development Engineer",
-    company: "Blueline Entreprise",
-    period: "2010 – 2016",
+    role: "Lead Developer / R&D Engineer",
+    company: "Blueline (Gulfsat)",
+    period: "2010 – 2018",
     description:
-      "Designed new solutions on pre-production projects: an API gateway interfacing internal services, a home-built GPS tracking system with KPIs on response and installation times, and a content delivery network for local DTV broadcasting on custom hardware.",
+      "Eight years spanning R&D engineering and technical leadership — from telecom data pipelines and digital TV middleware to leading a 3-engineer team through a modular architecture shift.",
+    highlights: [
+      "Lead Developer (2017–2018): technical lead for a 3-engineer team (DevOps, backend, full-stack); moved architecture toward a modular, near-microservices approach without fully committing to it given the system's scale.",
+      "Cut average delivery lead time by 50% by redesigning the engineering workflow — branching strategy, CI pipelines, code review standards, structured onboarding.",
+      "Regularly presented architecture decisions and trade-offs to a non-technical executive team.",
+      "R&D Engineer (2010–2016): GPS fleet tracking with a geospatial PostgreSQL schema and GPX ingestion pipelines, used by Operations to track vehicles and scheduling.",
+      "Digital TV: API-first middleware as the source of truth for subscriber management and EPG data across a 3-city network; built a multi-channel broadcast tool and high-throughput event-driven backends (RabbitMQ).",
+    ],
+    stack: ["Python", "C++", "Django", "Flask", "RabbitMQ", "Redis", "PostgreSQL"],
   },
   {
     role: "Software Developer, Intern",
     company: "Xone Technologies",
     period: "2010",
     description:
-      "Built a Python adaptation layer used as the base for connectors on a mobile banking exchange platform in Dakar, Senegal.",
+      "Solo development (Python) of the connectors for a mobile banking exchange point in Senegal, within a team of 4 developers working mainly in Java — deployed and used in production.",
   },
 ];
+
+export const education = [
+  {
+    degree: "MSc, Telecommunications",
+    school: "ESMT, Dakar, Senegal",
+    period: "2008 – 2010",
+  },
+  {
+    degree: "BSc, Engineering Sciences",
+    school: "ESMT, Dakar, Senegal",
+    period: "2005 – 2008",
+  },
+];
+
+export const languages = ["French (native)", "English (fluent)", "Spanish (intermediate)"];
 
 export const contact = {
   email: "thomas@ayih-akakpo.org",

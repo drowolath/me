@@ -26,6 +26,8 @@ export default function Hero() {
         <span className="text-accent">open to</span>{" "}
         {profile.openTo.join(" / ")}
       </p>
+
+      <p className="font-mono text-xs text-muted">{profile.location}</p>
     </section>
   );
 }
