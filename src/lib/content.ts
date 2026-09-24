@@ -141,7 +141,8 @@ export const experience: ExperienceEntry[] = [
     description:
       "Took over the group's IT leadership across caviar distribution and textile development, growing the team from 3 to 7 and building the integration backbone tying Odoo, Saleor and third-party APIs together.",
     highlights: [
-      "Odoo integration for distribution: order and stock management between Acipenser and its distributors (Paris, Luxembourg, New York); structured the product catalogue and achieved French e-invoicing compliance (Peppol).",
+      "Custom Odoo module development: extended roughly a dozen core models (sale.order, stock.picking, stock.lot, product.product, account.move, mrp.production, res.partner...) — real-time residual-stock guard against overselling on quotes, customer payment-risk scoring, per-lot traceability via QR codes, custom QWeb reports (multi-quote pro-forma, delivery slips, barcode labels), an HTTP controller for on-demand Excel export; a dedicated Chronopost module for real-time delivery tracking.",
+      "Odoo-based distribution system: order and stock management between Acipenser and its distributors (Paris, Luxembourg, New York); structured the product catalogue and achieved French e-invoicing compliance (Peppol).",
       "Event-driven integration middleware consuming webhooks across Odoo, Saleor and third-party carrier APIs — the single source of truth for group-wide data.",
       "Designed and delivered 2 B2C e-commerce stores, generating €500K+ in revenue over 4 years, with KPI reporting to steer the business.",
       "Delivered a vector search engine (FAISS/pgvector) for the brand's embroidery library, at the direct request of group leadership.",
