@@ -3,7 +3,7 @@ import { achievements } from "@/lib/content";
 export default function Achievements() {
   return (
     <section id="achievements" className="scroll-mt-20 border-t border-rule">
-      <div className="mx-auto max-w-2xl px-6 py-20">
+      <div className="mx-auto max-w-4xl px-6 py-20">
         <h2 className="font-mono text-xs tracking-widest text-muted uppercase">
           Key achievements
         </h2>

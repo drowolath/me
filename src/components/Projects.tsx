@@ -3,7 +3,7 @@ import { projects } from "@/lib/content";
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-20 border-t border-rule">
-      <div className="mx-auto max-w-2xl px-6 py-20">
+      <div className="mx-auto max-w-4xl px-6 py-20">
         <h2 className="font-mono text-xs tracking-widest text-muted uppercase">
           Selected projects
         </h2>
@@ -11,17 +11,17 @@ export default function Projects() {
           {projects.map((project) => {
             const body = (
               <>
-                <div className="flex items-baseline justify-between gap-4">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
                   <h3
                     className={
                       project.href
-                        ? "text-xl underline decoration-rule underline-offset-4 group-hover:decoration-accent"
-                        : "text-xl"
+                        ? "min-w-0 text-xl underline decoration-rule underline-offset-4 group-hover:decoration-accent"
+                        : "min-w-0 text-xl"
                     }
                   >
                     {project.name}
                   </h3>
-                  <span className="font-mono text-xs text-muted">
+                  <span className="shrink-0 font-mono text-xs whitespace-nowrap text-muted">
                     {project.href
                       ? project.href
                           .replace("https://github.com/", "")

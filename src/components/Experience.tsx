@@ -5,7 +5,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="scroll-mt-20 border-t border-rule">
-      <div className="mx-auto max-w-2xl px-6 py-20">
+      <div className="mx-auto max-w-4xl px-6 py-20">
         <h2 className="font-mono text-xs tracking-widest text-muted uppercase">
           Experience
         </h2>
@@ -15,12 +15,12 @@ export default function Experience() {
               key={`${role.company}-${role.period}`}
               className="flex flex-col gap-2 py-8 first:pt-0"
             >
-              <div className="flex items-baseline justify-between gap-4">
-                <h3 className="text-xl">
+              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                <h3 className="min-w-0 text-xl">
                   {role.role}{" "}
                   <span className="text-muted">· {role.company}</span>
                 </h3>
-                <span className="shrink-0 font-mono text-xs text-muted">
+                <span className="shrink-0 font-mono text-xs whitespace-nowrap text-muted">
                   {role.period}
                 </span>
               </div>

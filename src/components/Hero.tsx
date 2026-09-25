@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="about"
-      className="mx-auto flex max-w-2xl scroll-mt-20 flex-col gap-10 px-6 pt-16 pb-24 sm:pt-24"
+      className="mx-auto flex max-w-4xl scroll-mt-20 flex-col gap-10 px-6 pt-16 pb-24 sm:pt-24"
     >
       <p className="font-mono text-xs tracking-widest text-muted uppercase">
         {profile.name}
