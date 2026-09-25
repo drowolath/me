@@ -8,7 +8,7 @@ draft: false
 ---
 
 Lately I wanted to take on building a real-time payment processing and fraud detection system.
-As per custom, in those agentic days, I hoped on my keyboard and frantically started drafting what could be the product requirements and architecture before handing it to AI and start prompting back and forth. Then I remembered [No sloptober](https://no-sloptober.com/), and while we're still not there yet, I convinced myself to give it a try (at least for some of the core components).
+As per custom, in these agentic days, I hoped on my keyboard and frantically started drafting what could be the product requirements and architecture before handing it to AI and start prompting back and forth. Then I remembered [No sloptober](https://no-sloptober.com/), and while we're still not there yet, I convinced myself to give it a try (at least for some of the core components).
 
 
 ## 1. The itch
